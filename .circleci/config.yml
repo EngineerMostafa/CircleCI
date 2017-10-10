@@ -1,9 +1,9 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/CircleCi
     docker:
-      - image: circleci/node: 7
+        - image: circleci/node: 7
+    working_directory: ~/CircleCi
     steps:
       - checkout
       - run:
