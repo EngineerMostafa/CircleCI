@@ -13,15 +13,5 @@ jobs:
           name: test
           command: npm test
 
-workflows:
-  version: 2
-  build-deploy:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+
 
